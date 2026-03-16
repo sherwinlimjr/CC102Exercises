@@ -4,8 +4,7 @@ using namespace std;
 int analyze(int *grades, int students, int subjects) {
 
     cout << "\ngrade in the matrix:\n";
-
-
+    
     for(int i = 0; i < students; i++) {
         for(int j = 0; j < subjects; j++) {
             cout << *(grades + i * subjects + j) << "\t";
