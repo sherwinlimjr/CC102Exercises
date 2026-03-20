@@ -4,7 +4,7 @@
 
 using namespace std;
 
-
+//struct
 struct Book {
     string barcode;
     string title;
@@ -12,7 +12,7 @@ struct Book {
     int rating;
 };
 
-
+//category
 string getCategory(int rating) {
     if (rating == 5) return "Excellent";
     else if (rating == 4) return "Very Good";
@@ -35,7 +35,7 @@ bool isDuplicate(Book books[], int size, string code) {
     }
     return false;
 }
-
+//input 
 void inputBooks(Book books[], int size) {
     for (int i = 0; i < size; i++) {
         cout << "\nBook " << i + 1 << "\n";
@@ -71,7 +71,7 @@ void inputBooks(Book books[], int size) {
         }
     }
 }
-
+//display
 void displayBooks(const Book books[], int size) {
     cout << "\n\n===== BOOK LIST =====\n";
     cout << left << setw(15) << "Barcode"
@@ -90,9 +90,10 @@ void displayBooks(const Book books[], int size) {
     }
 }
 
+//main
 int main() {
     char choice;
-
+    //loop 
     do {
         int n;
         cout << "Enter number of books: ";
